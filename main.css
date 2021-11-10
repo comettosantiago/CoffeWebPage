@@ -158,7 +158,6 @@ body{
 }
 .contenidocuriosidad{
     width: 350px;
-    display: inline-block;
     text-align:center;
     margin: auto;
 
@@ -166,7 +165,6 @@ body{
     word-spacing: 2px;
     font-style: italic;
     line-height: 40px;
-    font-size: 18px;
     font-family:'Montserrat';
     font-weight:bold;
     

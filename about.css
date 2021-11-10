@@ -98,23 +98,27 @@ body{
 }
 .texto p{
     color:#3f3529;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 500;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .texto h1{
     font-size: 40px;
     padding: 30px;
     text-align: center;
-    font-family:'Montserrat', sans-serif  ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
     letter-spacing: 3px;
     color: #3f3529;
-    text-shadow: 0px 3px 5px #3f3529;
+    text-shadow: 0px 0px 25px #3f3529;
 }
 .texto h3{
     color:#3f3529;
     font-size: 20px;
-    padding: 15px 0px 0px 15px;
-    font-family:'Montserrat', sans-serif  ;
+    margin-top: 50px;
+    text-shadow: 0px 0px 5px #3f3529;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 
