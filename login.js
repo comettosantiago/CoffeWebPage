@@ -21,7 +21,6 @@ function cambiarLogin() {
         login.setAttribute('style', 'visibility: visible; opacity:1');
         document.getElementById('changebutton').setAttribute('value', 'Registrarse')
     }
-
 }
 
 
