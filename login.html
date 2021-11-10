@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Login
+    </title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="login.css" />
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <!-- script -->
+    <script src="./login.js"></script>
+
+
+</head>
+<!-------BODY--------->
+
+<body>
+
+    <!--------------------Barra superior-------------------->
+    <div class="topnavbar">
+        <!--izquierda-->
+        <div class="contenidoizq">
+            <a class="topnavbar-button botonestopnavbar" href="main.html" title="Ir al inicio">
+                <i class="fas fa-home fa-fw"></i> Inicio</a>
+        </div>
+    </div>
+
+    <!--------------------Contenido--------------------------->
+    <div class="contenedorprincipal">
+
+        <input type="button" id="changebutton" onclick="cambiarLogin()" value="Registrarse">
+
+        <!-- login -->
+        <div class="contenedorlogin" id="loggin" style="visibility: visible; opacity:1">
+            <h1>Iniciar Sesión en CoffeeBloom</h1>
+            <div class="loginsection">
+                <form class="loginform">
+                    <input type="email" id="user" placeholder="Correo electrónico" class="usuario" required>
+                    <input type="password" id="password" placeholder="Contraseña" class="contraseña" required>
+                    <input type="submit" value="Iniciar Sesión" class="submit">
+                </form>
+                <h3>¿Olvidaste tu contraseña?<br>
+                    ¡Intenta recordarla!
+                </h3>
+            </div>
+            <!-- <h2>¿No tenés una cuenta?</h2> -->
+            <p class="captcha">Protegido por reCAPTCHA</p>
+
+        </div>
+
+        <!-- register -->
+        <div class="contenedorregistro" id="reggister" style="visibility: hidden; opacity:0">
+            <h1>Registrarse</h1>
+            <div class="registersection" id="registersection">
+                <form class="registerform" onsubmit="return validar()">
+                    <input type="text" id="reguser" placeholder="Correo electrónico" class="regusuario">
+                    <input type="text" id="reguser2" placeholder="Repetir correo electrónico" class="regusuario2">
+                    <input type="password" id="regpassword" placeholder="Contraseña" class="regcontraseña">
+                    <input type="password" id="regpassword2" placeholder="Contraseña" class="regcontraseña2">
+                    <input type="submit" value="Confirmar registro" class="regsubmit">
+
+                </form>
+            </div>
+            <div class="registerconfirmed" id="registerconfirmed" style="visibility: hidden; opacity: 0;">
+                <i class="fas fa-check-circle"></i>
+                <p>¡Registro confirmado!</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!---------------------fin body---------------------->
+</body>
+
+</html>
